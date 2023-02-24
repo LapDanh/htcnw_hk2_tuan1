@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .khung{
+        width: 350px;
+        height: 450px;
+        border: 4px solid darkblue;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    h1,p,input{
+            text-align: left;
+            margin-bottom: 20px;
+    }
+    .khungcau12{
+        width: 300px;
+        height: 150px;
+        border: 4px double;
+
+    }
+    .khungcau14{
+        width: 550px;
+        height: 500px;
+        border: 1px solid black;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    
+    }
+    .khungcau15a{
+        width: 550px;
+        height: 500px;
+        border: 1px solid black;
+    }
+    .khungcau15b{
+        width: 550px;
+        height: 760px;
+        border: 1px solid black;
+    }
+    .khungcau16{
+        width: 350px;
+        height: 950px;
+        border: 4px solid gainsboro;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .khungcau17a{
+        width: 650px;
+        height: 1350px;
+        border: 4px solid gainsboro;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+        background-color: skyblue ;
+    }
+    .khungcau17b{
+        width: 550px;
+        height: 700px;
+        border: 4px solid gainsboro;
+    }
+    .khungcau18{
+        width: 300px;
+        height: 100px;
+        border: 4px solid gainsboro;
+    }
+    </style>
+</head>
+<body>
+    <div class="khung">
+        <h1>ĐĂNG KÍ</h1>
+        <p>Xin chao cac ban</p>
+        <form action="">
+            <input type="text" name="Họ" id="Họ">
+            <input type="text" name="Tên" id="Tên">
+            <input type="email" name="Email" id="Email" size="45">
+            <input type="email" name="Email" id="Email" size="45">
+            <input type="password" name="Password" id="Password">
+            <p>Ngày sinh</p>
+            <input type="date" name="bday" id=""><br>
+            <input type="checkbox" name="gender" value="Male">Nam
+            <input type="radio" name="gender" value="Female">Nữ<br>
+            <input type="submit" value="Đăng ký">
+        </form>
+    </div><br>
+<!-- Câu 12 -->
+ <p><b>Câu 12:</b></p>
+    <div class="khungcau12" >
+<form action=""></form>
+<p>Name:</p>
+<input type="text" name="Ten" id="" placeholder="Lap Danh"><br>
+<input type="submit" value="Submit">
+    </div>
+</body>
+</html>
+<!-- Câu 13 -->
+<p><b>Câu 13:</b></p>
+<div class="khung">
+    <form action="">
+        <input type="text" name="txtName" value="" size="20" maxlength="20" placeholder="Name">
+       <input type="text" name="txtTelephoneNumber" size="20" maxlength="20" placeholder="Telephone Number">
+        <input type="email" name="txtEmail" id="txtEmail" size="20" maxlength="20" placeholder="Email">
+        <p>Favorite Color:</p>
+        <input type="color" name="txtFavoriteColor">
+        <p>Date of Birth:</p>
+        <input type="date" name="txtbday" id=""><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+<!-- Câu 14 -->
+<p><b>Câu 14:</b></p>
+<div class="khungcau14">
+<h1><b>Contact Us</b></h1>
+<p>Use the following form send a message to Example Cafe</p>
+<form action=""></form>
+<table>
+    <tr>
+        <label for="emailFrom">Your Email</label>
+        <input type="text" name="txtfrom" id="emailFrom" size="20" tabindex="1" maxlength="250">             
+    </tr><br>
+    <tr>
+        <td><label for="emailBody"></label>Message</td>
+        <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><label for="link">How did you hear of us</label></td>
+        <td>
+            <select name="Link" id="link">
+                <option value="1">Google</option>
+                <option value="2">Firefox</option>
+                <option value="3">Chrome</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="check">Newsletter</label></td><br>
+        <td><input type="checkbox" name="vehicle" id="check" checked>Ensure this box is checked if you would like to receive email updates</td></td>
+    </tr>
+</table>
+<input type="submit" value="Send Message">
+</div>
+
+
+<!-- Câu 15 -->
+<p><b>Câu 15a:</b></p>
+<div class="khungcau15a">
+    <fieldset>
+        <legend>Your message:</legend>
+        <table>
+            <tr>
+                <td><label for="emailTo">To</label></td>
+                <td><input type="text" name="txtTo"  readonly="readonly" id="emailTo" size="20" value="Example Cafe"></td>
+            </tr>
+            <tr>
+                <td><label for="emailFrom">Your Email</label></td>
+                <td><input type="text" name="txtfrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>              
+            </tr>
+            <tr>
+                <td><label for="emailBody"></label>Message</td>
+                <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>How you found us:</legend>
+        <table>
+            <tr>
+                <td><label for="link">How did you hear of us</label></td>
+                <td>
+                    <select name="Link" id="link">
+                        <option value="1">Google</option>
+                        <option value="2">Firefox</option>
+                        <option value="3">Chrome</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="check">Newsletter</label></td><br>
+                <td><input type="checkbox" name="vehicle" id="check" checked>Ensure this box is checked if you would like to receive email updates</td></td>
+            </tr>
+                
+                
+            
+        </table>
+    </fieldset>
+    <input type="submit" value="Send Message">
+</div>
+
+<p><b>Câu 15b:</b></p>
+<div class="khungcau15b">
+    <fieldset>
+        <legend>Contact Information:</legend>
+        <table>
+            <tr>
+                <label for="fname">First Name</label></td>
+                <input type="text" name="txtfname"   id="fname" size="20"</td>
+            </tr><br>
+            <tr>
+                <label for="lname">Last Name</label></td>
+                <input type="text" name="txtlname"  id="lname" size="20"</td>
+            </tr><br>
+            <tr>
+                <label for="email">E-mail</label></td>
+                <input type="text" name="txtfrom" id="email" size="20" tabindex="1" maxlength="250"></td>              
+            </tr><br>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Competition Question:</legend>
+        <table>
+            <tr>
+                <p>How tall is the Eiffel Tower in Paris, France?</p><br> 
+                <input type="radio" name="answer1" value="" >584 ft <br>
+                <input type="radio" name="answer2" value="">784 ft <br>
+                <input type="radio" name="answer3" value="">984 ft <br>
+                <input type="radio" name="answer4" value="">1184 ft <br>
+
+            </tr> 
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Tiebreaker Question:</legend>
+        <table>
+            <p>In 25 word of less, say why you would like to win 10000$:</p>
+            <tr>
+                <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Enter Competition</legend>
+        <input type="submit" value="Enter Competition">
+    </fieldset>
+
+</div>
+<!-- Câu 16 -->
+<p><b>Câu 16:</b></p>
+<div class="khungcau16">
+    <h1><b>Travel reservation form</b></h1>
+    <p><b>* denotes mandotory</b></p>
+    <form action="">
+        <p>Full name*:</p>
+        <input type="text" name="ohioName" value="" size="20" maxlength="20" placeholder="FirstName LastName">
+        <p>Email address*:</p>
+        <input type="email" name="ohioEmail" value="" size="20" maxlength="20" placeholder="EMAIL_ADDRESS">
+        <p>Select Tour Package*:</p>
+        <select name="Travel" id="link">
+            <option value="1">Goa</option>
+            <option value="2">Ohio</option>
+        </select>
+        <p>Arrival date*:</p>
+        <input type="datetime" name="arrival time" id="" placeholder="m/d/y">
+        <p>Number of person*:</p>
+        <input type="text" name="number" id="" placeholder="UNKNOW_TYPE">
+        <p>What would you want to avail?*:</p>
+        <label for="choose1">Boarding</label>
+        <input type="checkbox" name="boarding" id="choose1"><br>
+        <label for="choose2">Fooding</label>
+        <input type="checkbox" name="Fooding" id="choose2"><br>
+        <label for="choose3">Sight seeing</label>
+        <input type="checkbox" name="Sight seeing" id="choose3"><br>
+        <p>Discout Coupon Code:</p>
+        <input type="text" name="code" id="" size="20" maxlength="20" placeholder="UNKNOW_TYPE">
+        <p>Terms and Conditions*:</p>
+        <input type="radio" name="choose1" id="">I agree 
+        <input type="radio" name="choose2" id="">I disagree <br>
+        <input type="submit" value="Complete reservation">
+    </form>
+</div>
+<!-- Câu 17 -->
+<p><b>Câu 17a</b></p>
+<div class="khungcau17a">
+    <h1 style="text-align: center;"><b>Survey Form</b></h1>
+    <p>If you are interested in purchasing one or more of our products before ordering please complete</p>
+    <p>some or all of the following survey for our marketing department.Answerin any Question is</p>
+    <p>optional, and all Information will be kept strictly confidental. Thanh you very much for your time</p>
+    <form action="">
+        <p>1.What is your name?</p>
+        <input type="text" name="ohioName" value="" size="40" maxlength="40">
+        <p>2.what is date of birht?</p><br>
+        <label for="month">Month:</label>
+        <select name="Travel" id="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <label for="date">Date:</label>
+        <select name="Travel" id="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <label for="year">Year:</label>
+        <input type="text" name="year" id="year" size="4">
+        <p>What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</p>
+        <textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2">
+Number/Avenue/P.O.Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:
+        </textarea>
+        <p>4.What is your address?</p>
+        <input type="text" name="address" id="" size="30">
+        <p>5.Have you viewed our online product catalog?</p>
+        <input type="radio" name="choose1" id="">Yes
+        <input type="radio" name="choose2" id="">No
+        <p>6.If so, what product(s),besides the one ordering, might you be interested in purchasing in the future?(Check that all apply.)</p>
+        <input type="checkbox" name="choose1" id="">VCR <br>
+        <input type="checkbox" name="choose2" id="">Big Screen TV <br>
+        <input type="checkbox" name="choose3" id="">Audio Equipment <br>
+        <input type="checkbox" name="choose4" id="">Video Equipment <br>
+        <input type="checkbox" name="choose5" id="">Camera Equipment <br>
+        <input type="checkbox" name="choose6" id="lastchoose" checked>
+        <label for="lastchoose">Other</label>
+        <input type="text" name="choose6" id="lastchoose" placeholder="Please List:">
+        <p>7.Do you have any Question, comment or suggestions before proceeding to the Orthe Form?</p>
+        <textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2">
+Your Input:
+                    </textarea><br>
+        <input type="submit" value="Send Form">
+        <input type="submit" value="Clear Form">    
+    </form>
+</div><br>
+<p>Câu 17b</p>
+<div class="khungcau17b">
+    <table>
+        <form action="" >
+          <tr>
+    <label for="browser">Browser:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+        </tr><br>
+        <tr>
+            <label for="username">UserName:</label>
+            <input type="text" name="username" id="username">
+        </tr><br>
+        <tr>
+            <label for="encryption">Encryption:</label>
+            <select name="encryption" id="Encryption" style="width:150px ;" >
+            <option value="1">2048 (High Grade)</option>
+            <option value="1">3000 (High Grade)</option>
+            <option value="1">500 (Low Grade)</option>
+            <option value="1">1000 (Low Grade)</option>
+            </select>
+        </tr><br><br>
+        <tr>
+            0<input type="range" name="a" id="a" value="50">100 
+        </tr><br>
+        <tr>
+            <input type="number" name="b" id="b" value="50">
+        </tr><br>
+        <tr>
+            <label for="bday">Birthday:</label>
+            ><input type="text" name="bday" id="bday" placeholder="mm/dd/yyyy">
+        </tr><br>
+        <tr>
+            <label for="color">Select your favorite color:</label>
+            <input type="color" name="color" id="color">
+        </tr><br>
+        <tr>
+            <label for="monthyear"></label>Birthday (month and year):
+            ><input type="month" name="month" id="monthyear">
+        </tr><br>
+        <tr>
+            <label for="week"></label>Select a week:
+            <input type="week" name="week" id="week">
+        </tr><br>
+        <tr>
+            <label for="time"></label>Select a time:
+            <input type="time" name="time" id="time">
+        </tr><br>
+        <tr>
+            <label for="bday"></label>Birthday (date) and time):
+            <input type="text" name="bday" id="bday">
+        </tr><br>
+        <tr>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email">
+        </tr><br>
+        <tr>
+            <label for="google"></label>Search Google:
+            <input type="text" name="google" id="google">
+        </tr><br>
+        <tr>
+            <label for="telephone"></label>Telephone:
+            <input type="text" name="telephone" id="telephone">
+        </tr><br>
+        <tr>
+            <label for="home"></label>Add your homepage:
+            <input type="text" name="home" id="home">
+        </tr><br>
+        <tr>
+         <input type="submit" value="Submit" id="submit">
+        <label for="submit"></label>
+        </tr><br>
+        <tr>
+            <p><b>Note:</b>The datalist tag is not supported in Safari or IE9(and earlier).</p>
+        </tr>
+        </form>
+    </table>
+</div>
+<!-- Câu 18 -->
+<p><b>Câu 18</b></p>
+<div class="khungcau18">
+    <form action="">
+        <label for="language">Please indicate your area of interest:</label>
+        <input list="languages" name="language" id="language">
+        <datalist id="languages">
+          <option value="HTML">
+          <option value="Javacrip">
+          <option value="CSS">
+        </datalist>
+      </form>
+</div>
+
+
+
